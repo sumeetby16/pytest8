@@ -1,11 +1,12 @@
 from emp import emp_details
 
-def test_emp():
-    expected_op=(
-        "Employee name: Queen\n"
-        "Employee id: 900\n"
-        "Department: MCA\n"
-        "Salary: 200000"
+def test_employee_details():
+    expected_output = (
+        "Employee Name: arya\n"
+        "Employee ID: 111\n"
+        "Employee Department: IIT\n"
+        "Employee Salary: 55000\n"
     )
 
-    assert emp_details("Queen",900,"MCA",200000) ==expected_op
+    result = emp_details("arya", "111", "IIT", "55000")
+    assert result == expected_output
